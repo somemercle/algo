@@ -29,6 +29,12 @@ export function SpecialItemsScreen() {
             <ChevronLeft className="w-6 h-6" />
           </button>
           <span className="ml-2">체크인 준비</span>
+          <button
+            onClick={() => navigate("/scan")}
+            className="ml-auto text-sm text-blue-600 underline underline-offset-2"
+          >
+            가이드 QR 스캔
+          </button>
         </div>
       </div>
 
@@ -47,7 +53,10 @@ export function SpecialItemsScreen() {
           <Slider {...sliderSettings}>
             {specialItems.map((item) => (
               <div key={item.id} className="px-2">
-                <div className="bg-white rounded-2xl shadow-sm overflow-hidden border">
+                <button
+                  onClick={() => navigate(`/guide/${item.id}`)}
+                  className="w-full bg-white rounded-2xl shadow-sm overflow-hidden border text-left"
+                >
                   <div className="aspect-[4/3] bg-gray-100">
                     <img
                       src={item.imageUrl}
@@ -62,10 +71,10 @@ export function SpecialItemsScreen() {
                     </p>
                     <div className="inline-flex items-center gap-2 text-blue-600 text-sm">
                       <QrCode className="w-4 h-4" />
-                      <span>현장에서 QR 가이드를 확인하세요</span>
+                      <span>선택해서 사용 가이드 보기</span>
                     </div>
                   </div>
-                </div>
+                </button>
               </div>
             ))}
           </Slider>

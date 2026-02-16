@@ -162,7 +162,7 @@ export function ProtectionPolicyScreen() {
             </div>
 
             <Button
-              onClick={() => navigate("/guide/dj-turntable")}
+              onClick={() => navigate("/guide-list")}
               className="w-full h-14 text-base"
               size="lg"
             >
