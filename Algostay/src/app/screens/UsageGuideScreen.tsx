@@ -17,7 +17,7 @@ export function UsageGuideScreen() {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <p className="text-gray-600 mb-4">물품을 찾을 수 없습니다</p>
-          <Button onClick={() => navigate("/scan")}>
+          <Button onClick={() => navigate("/guide-list")}>
             다시 스캔하기
           </Button>
         </div>
@@ -34,7 +34,7 @@ export function UsageGuideScreen() {
       {/* Header */}
       <div className="bg-white border-b sticky top-0 z-10">
         <div className="max-w-md mx-auto px-4 py-4 flex items-center">
-          <button className="p-2 -ml-2" onClick={() => navigate("/scan")}>
+          <button className="p-2 -ml-2" onClick={() => navigate("/guide-list")}>
             <ChevronLeft className="w-6 h-6" />
           </button>
           <span className="ml-2">사용 가이드</span>
@@ -192,7 +192,7 @@ export function UsageGuideScreen() {
             </Button>
             
             <Button
-              onClick={() => navigate("/scan")}
+              onClick={() => navigate("/guide-list")}
               className="w-full h-12"
             >
               다른 물품 가이드 보기
