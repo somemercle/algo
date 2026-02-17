@@ -162,11 +162,11 @@ export function ProtectionPolicyScreen() {
             </div>
 
             <Button
-              onClick={() => navigate("/guide/dj-turntable")}
+              onClick={() => navigate("/scan")}
               className="w-full h-14 text-base"
               size="lg"
             >
-              가이드 확인하러 가기
+              입실 후 QR 스캔하러 가기
             </Button>
           </>
         )}
