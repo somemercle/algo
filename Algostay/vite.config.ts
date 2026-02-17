@@ -10,7 +10,7 @@ export default defineConfig({
   ],
 
   // ✅ GitHub Pages용: 레포 이름 넣기
-  base: '/REPO_NAME/',
+  base: '/algo/',
 
   resolve: {
     alias: {
